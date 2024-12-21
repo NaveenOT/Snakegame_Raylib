@@ -82,36 +82,7 @@ class Snake{
 };
 
     
-/*
-bool checkCollision(Head* snake){
-    Head* ptr = snake;
-    Head* temp = snake;
-    Rectangle rect1 = {temp->headpos.x,temp->headpos.y, temp->size.x, temp->size.x};
-    Rectangle rect2;
-    if(ptr->next == NULL){
-        return false;
-    }
-    ptr = ptr->next;
-    while(ptr != NULL){
-        rect2 ={ptr->headpos.x,ptr->headpos.y, ptr->size.x, ptr->size.x};
-        ptr = ptr->next;
-        if(CheckCollisionRecs(rect1, rect2)){
-            return true;
-        }else{
-            return false;
-        }
-    }
-}
-void drawSnake(Head* snake){
-    Head* ptr = snake;
-    while(ptr != NULL){
-       
-        DrawRectangleV(ptr->headpos, ptr->size, RED);
-        ptr = ptr->next;
-    }
-        
-}
-*/
+
 int main(){
 
     Snake snake = Snake();
